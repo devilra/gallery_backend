@@ -4,7 +4,7 @@ const cors = require("cors");
 const cloudinary = require("./config/cloudinary");
 const fs = require("fs");
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000
 require("dotenv").config();
 
 app.use(express.json());
